@@ -1,0 +1,101 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+}
+
+body {
+    background-color: white;
+}
+
+header {
+    position: relative;
+    top: 0;
+    left: 0;
+    right: 0;
+    background: black;
+    padding: 0px 7%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+    transition: top 0.3s ease;
+}
+
+header .navbar ul {
+    list-style: none;
+    justify-content: center;
+}
+
+header .navbar ul li {
+    position: relative;
+    float: left;
+}
+
+header .navbar ul li a {
+    font-size: 20px;
+    padding: 20px;
+    color: white;
+    display: block;
+}
+
+header .navbar ul li a:hover{
+    /* background: rgb(30,30,30); */
+    color:lightgray;
+}
+
+header .navbar ul li ul{
+    position: absolute;
+    /* width: 100%; */
+    background: black;
+    display: none;
+}
+
+header .navbar ul li ul li {
+    width: 100%;
+    float: none;
+}
+
+header .navbar ul li ul li a:hover{
+    background: rgb(30,30,30);
+    color:lightgray;
+}
+
+header .navbar ul li:focus-within > ul,
+header .navbar ul li:hover > ul {
+    display: initial;
+}
+
+.background-img {
+    z-index: 1;
+    position: relative;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+.banner {
+    margin-top: 0;
+    margin-bottom: 0;
+    width: 100%;
+    background-color: black;
+    z-index: 1000;
+
+}
+
+.logo {
+    margin-left: 20px;
+    margin-top: 20px;
+    height: 50px;
+}
+
+.content {
+    margin: 16px;
+}
+
+.image-home {
+    width: 100%;
+    height: 50%;
+}
