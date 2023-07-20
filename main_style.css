@@ -58,6 +58,12 @@ header .navbar ul li ul li {
     float: none;
 }
 
+header .navbar ul li ul li a {
+    font-size: 16px;
+    white-space: nowrap;
+
+}
+
 header .navbar ul li ul li a:hover{
     background: rgb(30,30,30);
     color:lightgray;
@@ -98,4 +104,10 @@ header .navbar ul li:hover > ul {
 .image-home {
     width: 100%;
     height: 50%;
+}
+
+.footer-container {
+    padding: 20px;
+    background: black;
+    color: white;
 }
