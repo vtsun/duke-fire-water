@@ -98,7 +98,7 @@ header .navbar ul li:hover > ul {
 }
 
 .content {
-    margin: 16px;
+    padding: 50px;
 }
 
 .image-home {
@@ -157,4 +157,9 @@ header label {
     #menu-bar:checked ~ .navbar {
         display: initial;
     }
+}
+
+.content h1 {
+    font-size: 50px;
+    padding-bottom: 20px;
 }
