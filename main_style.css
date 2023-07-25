@@ -111,3 +111,50 @@ header .navbar ul li:hover > ul {
     background: black;
     color: white;
 }
+
+/* Change menu icon later */
+
+#menu-bar {
+    display: none;
+}
+
+header label {
+    font-size: 20px;
+    color: white;
+    float: none;
+    cursor: pointer;
+    display: none;
+}
+
+@media screen and (max-width: 600px) {
+    .banner {
+        display: none;
+    }
+
+    header label {
+        display: initial;
+        padding: 20px
+
+    }
+
+    header .navbar {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background: black;
+        display: none;
+    }
+
+    header .navbar ul li {
+        width: 100%;
+    }
+
+    header .navbar ul li ul {
+        position: relative;
+    }
+
+    #menu-bar:checked ~ .navbar {
+        display: initial;
+    }
+}

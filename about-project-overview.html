@@ -1,80 +1,88 @@
 <!DOCTYPE html>
 
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, inital-scale=1.0">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, inital-scale=1.0">
+
+    <link rel="stylesheet" href="main_style.css">
+
+
+</head>
+
+<body>
+    <div class="banner">
+        <img class="logo" src="/Users/victorsun/Desktop/Duke/nicholas-school-logo-white.svg" alt="Duke Logo" />
+        <img class="logo" src="/Users/victorsun/Desktop/Duke/usda-logo.svg" alt="USDA Logo" />
+        <img class="logo" src="/Users/victorsun/Desktop/Duke/Logo_of_the_United_States_Forest_Service.svg"
+            alt="USFS Logo" />
+    </div>
+
+    <header class="sticky-header">
+        <!-- Menu Bar for small resolutions -->
+        <!-- Change to animated icon later -->
+        <input type="checkbox" id="menu-bar">
+        <label for="menu-bar">Menu</label>
         
-        <link rel="stylesheet" href="main_style.css">
+        <!-- Navigation Bar -->
+        <nav class="navbar">
+            <ul>
+                <li><a href="homepage.html">Home</a></li>
+                <li><a href="map.html">Maps</a>
+                    <ul>
+                        <li><a href="map-interactive-1.html">Map 1</a></li>
+                        <li><a href="">Map 2</a></li>
+                    </ul>
+                </li>
+                <li><a href="resources.html">Resources</a></li>
+                <li><a href="about.html">About</a>
+                    <ul>
+                        <li><a href="about-project-overview.html">Project Overview</a></li>
+                        <li><a href="about-us.html">Who We Are</a></li>
+                        <li><a href="about-updates.html">Updates</a></li>
+                    </ul>
+                </li>
 
-        
-    </head>
+            </ul>
+        </nav>
 
-    <body>
-        <div class="banner">
-            <img class="logo" src="/Users/victorsun/Desktop/Duke/nicholas-school-logo-white.svg" alt="Duke Logo" />
-            <img class="logo" src="/Users/victorsun/Desktop/Duke/usda-logo.svg" alt="USDA Logo" />
-            <img class="logo" src="/Users/victorsun/Desktop/Duke/Logo_of_the_United_States_Forest_Service.svg" alt="USFS Logo" />
-        </div>
+    </header>
 
-        <header class="sticky-header">
-            <!-- Navigation Bar -->
-            <nav class="navbar">
-                <ul>
-                    <li><a href="homepage.html">Home</a></li>
-                    <li><a href="map.html">Maps</a>
-                        <ul>
-                            <li><a href="map-interactive-1.html">Map 1</a></li>
-                            <li><a href="">Map 2</a></li>
-                        </ul>
-                    </li>
-                    <li><a href="resources.html">Resources</a></li>
-                    <li><a href="about.html">About</a>
-                        <ul>
-                            <li><a href="about-project-overview.html">Project Overview</a></li>
-                            <li><a href="about-us.html">Who We Are</a></li>
-                            <li><a href="about-updates.html">Updates</a></li>
-                        </ul>
-                    </li>
+    <p>
+        Project Overview
+    </p>
 
-                </ul>
-            </nav>
+    <footer class="footer-container">
+        <a href="">
+            Contact Us
+        </a>
+    </footer>
 
-        </header>
-
-        <p>
-            Project Overview
-        </p>
-
-        <footer class="footer-container">
-            <a href="">
-                Contact Us
-            </a>
-        </footer>
-
-        <!-- Footer
+    <!-- Footer
         <div class="footer-container">
             <a href="">
                 Contact Us
             </a>
         </div> -->
 
-        <script>
-            // Paste the JavaScript code here
-            window.addEventListener('scroll', function() {
-              var header = document.querySelector('header.sticky-header');
-              var banner = document.querySelector('.banner');
-              var scrollY = window.scrollY || window.pageYOffset;
-    
-              if (scrollY > banner.offsetHeight) {
+    <script>
+        // Paste the JavaScript code here
+        window.addEventListener('scroll', function () {
+            var header = document.querySelector('header.sticky-header');
+            var banner = document.querySelector('.banner');
+            var scrollY = window.scrollY || window.pageYOffset;
+
+            if (scrollY > banner.offsetHeight) {
                 header.style.position = 'fixed';
                 header.style.top = '0';
-              } else {
+            } else {
                 header.style.position = 'relative';
                 header.style.top = '';
-              }
-            });
-        </script>
+            }
+        });
+    </script>
 
-    </body>
+</body>
+
 </html>
