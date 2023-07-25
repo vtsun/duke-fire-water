@@ -1,0 +1,36 @@
+/* style for interactive map */
+.map-thumbnail-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    padding: 50px;
+}
+
+.map-thumbnail {
+    width: 100%;
+}
+
+.map-wrapper {
+    position: relative;
+}
+
+.map-caption {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7); /* Adjust the transparency (alpha) value to control the opacity of the caption */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0; /* Start with the caption hidden */
+    transition: opacity 0.3s ease; /* Smooth transition when showing/hiding the caption */
+    color: white;
+    font-size: 16px;
+
+}
+
+.map-wrapper:hover .map-caption {
+    opacity: 1;
+}
