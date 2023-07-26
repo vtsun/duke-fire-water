@@ -20,12 +20,12 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.5); /* Adjust the transparency (alpha) value to control the opacity of the caption */
+    background-color: rgba(0, 0, 0, 0.5);
     display: flex;
     justify-content: center;
     align-items: center;
-    opacity: 0; /* Start with the caption hidden */
-    transition: opacity 0.3s ease; /* Smooth transition when showing/hiding the caption */
+    opacity: 0;
+    transition: opacity 0.3s ease;
 
 }
 
