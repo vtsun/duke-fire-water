@@ -6,9 +6,52 @@
 
 .about-us-box {
     width: 400px;
-    height: 600px;
+    height: 800px;
     /* flex: 0 0 calc(33.33% - 20px); */
     background-color: #f0f0f0;
-    padding: 20px;
+    /* padding: 20px; */
     text-align: center;
+}
+
+.about-us-box p {
+    margin-left: 40px;
+    margin-bottom: 40px;
+    margin-right: 40px;
+
+    text-align: left;
+}
+
+.about-us-box img {
+    width: 400px;
+    height: 400px;
+}
+
+.content h2 {
+    margin-bottom: 30px;
+    margin-top: 30px;
+    font-size: 30px;
+    color: black;
+}
+
+.content h2 a {
+    display: inline-block;
+    color: black;
+    transition: transform 0.3s ease;
+}
+
+.content p {
+    margin-bottom: 16px;
+    font-size: 20px;
+    color: black;
+
+}
+
+.content h3 {
+    font-size: 24px;
+    margin-bottom: 16px;
+    color: black;
+}
+
+.content h2 a:hover {
+    transform: scale(1.1);
 }

@@ -155,7 +155,10 @@ header label {
     header label {
         display: initial;
         padding: 20px
+    }
 
+    header label:hover {
+        color: lightgray;
     }
 
     header .navbar {
