@@ -4,6 +4,10 @@
     gap: 20px;
 }
 
+.about-container {
+    padding-top: 52px;
+}
+
 .about-us-box {
     width: 400px;
     height: 800px;
