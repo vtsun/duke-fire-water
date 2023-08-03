@@ -8,30 +8,31 @@
 
     <link rel="stylesheet" href="main_style.css">
     <link rel="stylesheet" href="about_style.css">
-
-
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
 
 </head>
 
 <body>
-    <div class="banner">
-        <a href="https://nicholas.duke.edu/">
-            <img class="logo" src="images/nicholas-school-logo-white.svg" alt="Duke Logo" />
-        </a>
-        <a href="https://www.usda.gov/">
-            <img class="logo" src="images/usda-logo.svg" alt="USDA Logo" />
-        </a>
-        <a href="https://www.fs.usda.gov/">
-            <img class="logo" src="images/Logo_of_the_United_States_Forest_Service.svg" alt="USFS Logo" />
-        </a>
-    </div>
-
     <header class="sticky-header">
+        <nav class="banner">
+            <a href="https://nicholas.duke.edu/">
+                <img class="logo" src="images/nicholas-school-logo-white.svg" alt="Duke Logo" />
+            </a>
+            <a href="https://www.usda.gov/">
+                <img class="logo" src="images/usda-logo.svg" alt="USDA Logo" />
+            </a>
+            <a href="https://www.fs.usda.gov/">
+                <img class="logo" src="images/Logo_of_the_United_States_Forest_Service.svg" alt="USFS Logo" />
+            </a>
+        </nav>
+
         <!-- Menu Bar for small resolutions -->
         <!-- Change to animated icon later -->
         <input type="checkbox" id="menu-bar">
-        <label for="menu-bar">Menu</label>
-
+        <label for="menu-bar">
+            <img class="hamburger" src="/Users/victorsun/Desktop/Duke/icons8-menu.svg">
+            <!-- Menu -->
+        </label>
         <!-- Navigation Bar -->
         <nav class="navbar">
             <ul>
@@ -57,41 +58,57 @@
 
     </header>
 
-    <div class="content">
-        <h1>
-            About Us
-        </h1>
-
-        <div class="about-us-container">
-            <div class="about-us-box">
-                <img src="/Users/victorsun/Desktop/Duke/blank_avatar.svg">
-                <h2>
-                    Name
-                </h2>
-                <p>
-                    Info
-                </p>
-            </div>
-            <div class="about-us-box">
-                <img src="/Users/victorsun/Desktop/Duke/blank_avatar.svg">
-                <h2>
-                    Name
-                </h2>
-                <p>
-                    Info
-                </p>
-            </div>
-            <div class="about-us-box">
-                <img src="/Users/victorsun/Desktop/Duke/blank_avatar.svg">
-                <h2>
-                    Name
-                </h2>
-                <p>
-                    Info
-                </p>
+    <div class="about-container">
+        <div class="content">
+            <h1>
+                About Us
+            </h1>
+    
+            <div class="about-us-container">
+                <div class="about-us-box">
+                    <img src="/Users/victorsun/Desktop/Duke/blank_avatar.svg">
+                    <h2>
+                        Name
+                    </h2>
+                    <h3>
+                        Title
+                    </h3>
+                    <p>
+                        Info
+                    </p>
+                    <h3>
+                        Education
+                    </h3>
+                    <p>
+                        School
+                    </p>
+                    <p>
+    
+                    </p>
+                </div>
+                <div class="about-us-box">
+                    <img src="/Users/victorsun/Desktop/Duke/blank_avatar.svg">
+                    <h2>
+                        Name
+                    </h2>
+                    <p>
+                        Info
+                    </p>
+                </div>
+                <div class="about-us-box">
+                    <img src="/Users/victorsun/Desktop/Duke/blank_avatar.svg">
+                    <h2>
+                        Name
+                    </h2>
+                    <p>
+                        Info
+                    </p>
+                </div>
             </div>
         </div>
     </div>
+
+    
 
     <footer class="footer-container">
         <a href="">
@@ -107,20 +124,15 @@
         </div> -->
 
     <script>
-        // Paste the JavaScript code here
-        window.addEventListener('scroll', function () {
-            var header = document.querySelector('header.sticky-header');
-            var banner = document.querySelector('.banner');
-            var scrollY = window.scrollY || window.pageYOffset;
-
-            if (scrollY > banner.offsetHeight) {
-                header.style.position = 'fixed';
-                header.style.top = '0';
+        const header = document.querySelector('header');
+        function toggleStickyHeader() {
+            if (window.scrollY > 0) {
+                header.classList.add('sticky');
             } else {
-                header.style.position = 'relative';
-                header.style.top = '';
+                header.classList.remove('sticky');
             }
-        });
+        }
+        window.addEventListener('scroll', toggleStickyHeader);
     </script>
 
 </body>
