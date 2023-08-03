@@ -1,4 +1,11 @@
-/* style for interactive map */
+.map-container {
+    padding-top: 82px;
+}
+
+.int-map-container {
+    padding-top: 84px;
+}
+
 .map-thumbnail-container {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
