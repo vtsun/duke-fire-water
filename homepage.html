@@ -6,7 +6,9 @@
     <title>
         Duke USFS Fire and Water Project Homepage
     </title>
-    <link rel="stylesheet" type="text/css" href="main_style.css">
+    <link rel="stylesheet" type="text/css" href="main_style_alt.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+
 </head>
 
 <!-- Body -->
@@ -14,68 +16,146 @@
 <body>
     <!-- Home Screen -->
     <div class="home-screen">
+        <header class="sticky-header">
+            <nav class="banner">
+                <a href="https://nicholas.duke.edu/">
+                    <img class="logo" src="images/nicholas-school-logo-white.svg" alt="Duke Logo" />
+                </a>
+                <a href="https://www.usda.gov/">
+                    <img class="logo" src="images/usda-logo.svg" alt="USDA Logo" />
+                </a>
+                <a href="https://www.fs.usda.gov/">
+                    <img class="logo" src="images/Logo_of_the_United_States_Forest_Service.svg" alt="USFS Logo" />
+                </a>
+            </nav>
 
-        <!-- Navigation Bar -->
-        <div class="banner">
-            <a href="https://nicholas.duke.edu/">
-                <img class="logo" src="images/nicholas-school-logo-white.svg" alt="Duke Logo" />
-            </a>
-            <a href="https://www.usda.gov/">
-                <img class="logo" src="images/usda-logo.svg" alt="USDA Logo" />
-            </a>
-            <a href="https://www.fs.usda.gov/">
-                <img class="logo" src="images/Logo_of_the_United_States_Forest_Service.svg" alt="USFS Logo" />
-            </a>
-            <a href="https://www.epa.gov/">
-                <img class="logo" src="images/EPA_logo.svg" alt="EPA Logo" />
-            </a>
-        </div>
+            <!-- Menu Bar for small resolutions -->
+            <!-- Change to animated icon later -->
+            <input type="checkbox" id="menu-bar">
+            <label for="menu-bar">
+                <img class="hamburger" src="/Users/victorsun/Desktop/Duke/icons8-menu.svg">
+                <!-- Menu -->
+            </label>
+            <!-- Navigation Bar -->
+            <nav class="navbar">
+                <ul>
+                    <li><a href="homepage.html">Home</a></li>
+                    <li><a href="about.html">About</a>
+                        <ul>
+                            <li><a href="about-project-overview.html">Project Overview</a></li>
+                            <li><a href="about-us.html">Who We Are</a></li>
+                            <li><a href="about-updates.html">Updates</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="map.html">Maps</a>
+                        <ul>
+                            <li><a href="map-interactive-1.html">Map 1</a></li>
+                            <li><a href="">Map 2</a></li>
+                            <li><a href="">Map 3</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="resources.html">Resources</a></li>
+
+                </ul>
+            </nav>
+
+        </header>
 
         <!-- Add image here -->
         <div class="image-container">
-            <header class="sticky-header">
-                <!-- Menu Bar for small resolutions -->
-                <!-- Change to animated icon later -->
-                <input type="checkbox" id="menu-bar">
-                <label for="menu-bar">Menu</label>
-    
-                <!-- Navigation Bar -->
-                <nav class="navbar">
-                    <ul>
-                        <li><a href="homepage.html">Home</a></li>
-                        <li><a href="about.html">About</a>
-                            <ul>
-                                <li><a href="about-project-overview.html">Project Overview</a></li>
-                                <li><a href="about-us.html">Who We Are</a></li>
-                                <li><a href="about-updates.html">Updates</a></li>
-                            </ul>
-                        </li>
-                        <li><a href="map.html">Maps</a>
-                            <ul>
-                                <li><a href="map-interactive-1.html">Map 1</a></li>
-                                <li><a href="">Map 2</a></li>
-                                <li><a href="">Map 3</a></li>
-                            </ul>
-                        </li>
-                        <li><a href="resources.html">Resources</a></li>
-    
-                    </ul>
-                </nav>
-    
-            </header>
+
             <div class="homepage-title-container">
                 <h1>
                     Wildfire Impacts on Water Quality
                 </h1>
             </div>
+            <img class="arrow" src="/Users/victorsun/Desktop/Duke/down-arrow-svgrepo-com.svg">
         </div>
 
         <!-- Content -->
         <div class="content">
-            <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset
-                concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur
-                eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.
-            </p>
+            <!-- ABOUT SECTION -->
+            <div>
+                <h1>
+                    <a href="about.html">
+                        About
+                    </a>
+                    
+                </h1>
+                <h2>
+                    <a href="about-project-overview.html">
+                        Project Overview
+                    </a>
+                </h2>
+                <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset
+                    concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur
+                    eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.
+                </p>
+                <h2>
+                    <a href="about-us.html">
+                        Who We Are
+                    </a>
+                </h2>
+                <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset
+                    concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur
+                    eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.
+                </p>
+                <h2>
+                    <a href="about-updates.html">
+                        Project Updates
+                    </a>
+                </h2>
+                <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset
+                    concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur
+                    eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.
+                </p>
+            </div>
+
+            <!-- MAPS SECTION -->
+            <div>
+                <h1>
+                    <a href="map.html">
+                        Maps
+                    </a>
+                </h1>
+                <h2>
+                    <a href="map-interactive-1.html">
+                        Map 1
+                    </a>
+                </h2>
+                <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset
+                    concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur
+                    eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.
+                </p>
+                <h2>
+                    <a href="">
+                        Map 2
+                    </a>
+                </h2>
+                <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset
+                    concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur
+                    eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.
+                </p>
+                <h2>
+                    <a href="">
+                        Map 3
+                    </a>
+                </h2>
+                <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset
+                    concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur
+                    eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.
+                </p>
+            </div>
+
+            <!-- RESOURCES SECTION -->
+            <div>
+                <h1>
+                    <a href="resources.html">
+                        Resources
+                    </a>
+                </h1>
+            </div>
+
             <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset
                 concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur
                 eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.
@@ -164,23 +244,16 @@
     </div>
 </body>
 
-
-
-
 <script>
-    window.addEventListener('scroll', function () {
-        var header = document.querySelector('header.sticky-header');
-        var banner = document.querySelector('.banner');
-        var scrollY = window.scrollY || window.pageYOffset;
-
-        if (scrollY > banner.offsetHeight) {
-            header.style.position = 'fixed';
-            header.style.top = '0';
+    const header = document.querySelector('header');
+    function toggleStickyHeader() {
+        if (window.scrollY > 0) {
+            header.classList.add('sticky');
         } else {
-            header.style.position = 'relative';
-            header.style.top = '';
+            header.classList.remove('sticky');
         }
-    });
+    }
+    window.addEventListener('scroll', toggleStickyHeader);
 </script>
 
 
