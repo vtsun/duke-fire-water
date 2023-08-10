@@ -212,6 +212,6 @@ header label {
     position: absolute;
     bottom: 2%;
     left: 50%;
-    height: 60px;
+    height: 32px;
     transform: translateX(-50%);
 }
