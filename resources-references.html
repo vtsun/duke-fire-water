@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="main_style.css">
     <link rel="stylesheet" href="resources_style.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.11.5/css/jquery.dataTables.min.css">
 
 </head>
 
@@ -37,8 +38,7 @@
         <nav class="navbar">
             <ul>
                 <li><a href="homepage.html">Home</a></li>
-                <li>
-                    <a href="about.html">About</a>
+                <li><a href="about.html">About</a>
                     <ul>
                         <li><a href="about-project-overview.html">Project Overview</a></li>
                         <li><a href="about-us.html">Who We Are</a></li>
@@ -52,12 +52,7 @@
                         <li><a href="">Map 3</a></li>
                     </ul>
                 </li>
-                <li>
-                    <a href="resources.html">Resources</a>
-                    <ul>
-                        <li><a href="resources-references.html">References</a></li>
-                    </ul>
-                </li>
+                <li><a href="resources.html">Resources</a></li>
 
             </ul>
         </nav>
@@ -66,23 +61,18 @@
 
     <div class="resources-container">
         <div class="content">
-            <h1>
-                Resources
-            </h1>
-
-            <h2>
-                <a href="resources-references.html">References</a>
-            </h2>
-            <p>
-
-            </p>
-
-            <h2>
-                <a class="source-link" href="https://github.com/vtsun/duke-fire-water">Source Code</a>
-            </h2>
-            <p>
-                View GitHub repository.
-            </p>
+            <table id="referenceTable">
+                <thead>
+                    <tr>
+                        <th>Title</th>
+                        <th>Authors</th>
+                        <th>Year</th>
+                        <th>Citation</th>
+                    </tr>
+                </thead>
+                <tbody id="tableBody">
+                </tbody>
+            </table>
 
         </div>
     </div>
@@ -107,6 +97,9 @@
         }
         window.addEventListener('scroll', toggleStickyHeader);
     </script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.datatables.net/1.11.5/js/jquery.dataTables.min.js"></script>
+    <script src="table-script.js"></script>
 
 </body>
 
