@@ -44,9 +44,9 @@ function populateTable() {
         const cell4 = row.insertCell(3);
 
 
-        cell1.textContent = item.title;
-        cell2.textContent = item.authors;
-        cell3.textContent = item.year;
+        cell1.textContent = item.authors;
+        cell2.textContent = item.year;
+        cell3.textContent = item.title;
         cell4.textContent = item.citation;
 
     });
