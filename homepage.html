@@ -76,7 +76,7 @@
                     Wildfire Impacts on Water Quality
                 </h1>
             </div>
-            <a href="#cont">
+            <a href="#cont" id="scrollLink">
                 <img class="arrow" src="images/down-arrow.svg">
             </a>
         </div>
@@ -269,6 +269,31 @@
         }
     }
     window.addEventListener('scroll', toggleStickyHeader);
+</script>
+
+<script>
+    function smoothScrollToSection(sectionId, offset = 0) {
+        const defaultOffset = 82;
+        const section = document.getElementById(sectionId);
+
+        if (section) {
+            const offsetPosition = section.offsetTop - defaultOffset - offset;
+
+            window.scrollTo({
+                top: offsetPosition,
+                behavior: "smooth"
+            });
+        }
+    }
+
+    const scrollLink = document.getElementById("scrollLink");
+
+    if (scrollLink) {
+        scrollLink.addEventListener("click", (event) => {
+            event.preventDefault();
+            smoothScrollToSection("cont");
+        });
+    }
 </script>
 
 

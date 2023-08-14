@@ -73,6 +73,8 @@
             <ul>
                 <li><a href="#project-background-objectives" id="scrollLink">Background and Objectives</a></li>
                 <li><a href="#project-timeline" id="timelineLink">Timeline</a></li>
+                <li><a href="#literature-review" id="litRevLink">Literature Review</a></li>
+
             </ul>
         </div>
 
@@ -181,6 +183,17 @@
 
             </div>
 
+            <div id="literature-review">
+                <h2>
+                    Literature Review
+                </h2>
+
+                <p>
+                    TEXT
+                </p>
+
+            </div>
+
         </div>
     </div>
 
@@ -226,6 +239,8 @@
 
         const scrollLink = document.getElementById("scrollLink");
         const timelineLink = document.getElementById("timelineLink");
+        const litRevLink = document.getElementById("litRevLink");
+
 
         if (scrollLink) {
             scrollLink.addEventListener("click", (event) => {
@@ -238,6 +253,13 @@
             timelineLink.addEventListener("click", (event) => {
                 event.preventDefault();
                 smoothScrollToSection("project-timeline");
+            });
+        }
+
+        if (litRevLink) {
+            litRevLink.addEventListener("click", (event) => {
+                event.preventDefault();
+                smoothScrollToSection("literature-review");
             });
         }
     </script>
