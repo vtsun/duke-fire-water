@@ -47,6 +47,10 @@ header .navbar ul li a {
 
 header .navbar ul li a:hover {
     color: rgba(160, 160, 160);
+    text-decoration: underline;
+    text-decoration-skip-ink: none;
+    text-underline-offset: 8px;
+    text-decoration-thickness: 3px;
 }
 
 header .navbar ul li ul {
@@ -69,6 +73,10 @@ header .navbar ul li ul li a {
 header .navbar ul li ul li a:hover {
     background: rgba(0, 0, 0, 0.9);
     color: lightgray;
+    text-decoration: underline;
+    text-decoration-skip-ink: none;
+    text-underline-offset: 4px;
+
 }
 
 header .navbar ul li:focus-within>ul,
@@ -151,6 +159,9 @@ header label {
 
     header label:hover {
         color: lightgray;
+        text-decoration: underline;
+        text-decoration-skip-ink: none;
+        text-underline-offset: 8px;
     }
 
     header .navbar {
