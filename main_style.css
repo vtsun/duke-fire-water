@@ -101,7 +101,10 @@ header .navbar ul li:hover>ul {
 
 .content {
     font-weight: 300;
-    padding: 50px;
+    padding-top: 50px;
+    padding-left: 8%;
+    padding-bottom: 50px;
+    padding-right: 8%;
 }
 
 .image-container {
@@ -203,7 +206,7 @@ header label {
 
 
 .content h1 {
-    font-size: 50px;
+    font-size: 42px;
     padding-bottom: 20px;
     padding-top: 20px;
     color: black;
