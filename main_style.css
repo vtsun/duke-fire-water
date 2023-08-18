@@ -249,6 +249,7 @@ header label {
     justify-content: center;
     width: 365px;
     height: 500px;
+    border-radius: 20px;
     background-color: #f0f0f0;
 }
 
@@ -293,7 +294,7 @@ header label {
     color: white;
     text-decoration: none;
     border: none;
-    border-radius: 5px;
+    border-radius: 32px;
     cursor: pointer;
     transition: background-color 0.3s ease;
 }

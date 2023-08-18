@@ -1,5 +1,19 @@
 .about-container {
     padding-top: 54px;
+    margin-left: 8%;
+    margin-right: 8%;
+}
+
+.about-us-container {
+    margin-top: 104px;
+    margin-left: 8%;
+    margin-right: 8%;
+}
+
+.about-us-container h1 {
+    padding-top: 24px;
+    font-size: 42px;
+    text-align: left;
 }
 
 .project-overview-container {
@@ -7,32 +21,90 @@
     padding-top: 54px;
 }
 
-.about-us-container {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-    gap: 20px;
+.profile-container {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    justify-content: center;
+    align-items: start;
+    gap: 50px;
 }
 
-.about-us-box {
-    width: 350px;
+.profile-box {
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 369px;
     height: 800px;
-    /* flex: 0 0 calc(33.33% - 20px); */
     background-color: #f0f0f0;
-    /* padding: 20px; */
-    text-align: center;
 }
 
-.about-us-box p {
-    margin-left: 40px;
-    margin-bottom: 40px;
-    margin-right: 40px;
 
+.profile-img-container img {
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    width: 369px;
+    height: 369px;
+}
+
+.profile-img-container {
+    display: flex;
+    align-items: flex-start;
+}
+
+.profile-text-container {
+    margin-top: 20px;
+    margin-left: 40px;
+    margin-right: 40px;
+    margin-bottom: 20px;
+}
+
+.profile-text-container h2 {
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.profile-text-container h3 {
+    font-size: 20px;
+    margin-top: 10px;
+    margin-bottom: 40px;
+}
+
+
+.profile-text-container p {
     text-align: left;
 }
 
-.about-us-box img {
-    width: 350px;
-    height: 350px;
+.profile-button-container {
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    flex-grow: 1;
+    margin-bottom: 20px;
+}
+
+.profile-button-container a {
+    font-size: 16px;
+    font-weight: 500;
+    text-align: center;
+}
+
+.profile-page-button {
+    width: 300px;
+    padding: 10px 10px;
+    background-color: rgba(40, 40, 40);
+    color: white;
+    text-decoration: none;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.profile-page-button:hover {
+    background-color: rgba(80, 80, 80);
 }
 
 /* H2 STYLE */
