@@ -94,9 +94,7 @@
 
     <!-- Footer -->
     <div class="footer-container">
-        <a href="">
-            Contact Us
-        </a>
+        <p>Page last updated: <span id="lastUpdate"></span></p>
     </div>
 
     <script>
@@ -109,6 +107,14 @@
             }
         }
         window.addEventListener('scroll', toggleStickyHeader);
+
+        // LAST UPDATED TEXT:
+        function getLastModifiedDate() {
+            var lastModified = new Date(document.lastModified);
+            return lastModified.toLocaleString();
+        }
+
+        document.getElementById("lastUpdate").textContent = getLastModifiedDate();
     </script>
 
 </body>

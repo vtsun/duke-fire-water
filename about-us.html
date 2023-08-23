@@ -87,12 +87,14 @@
                     </h3>
                     <p>
                         Dr. Li's research interests focus primarily on climate dynamics, land-atmosphere interaction,
-                        hydroclimatology, and climate modeling. Her current research is to understand how the hydrological
+                        hydroclimatology, and climate modeling. Her current research is to understand how the
+                        hydrological
                         cycle changes in the current and future climate and their impacts on the ecosystems, subtropical
-                        high variability and change, unforced global temperature variability, and climate and health issues.
+                        high variability and change, unforced global temperature variability, and climate and health
+                        issues.
                     </p>
                     <p>
-    
+
                     </p>
                 </div>
                 <div class="profile-button-container">
@@ -100,7 +102,7 @@
                         Website
                     </a>
                 </div>
-                
+
             </div>
             <div class="profile-box">
                 <img src="/Users/victorsun/Desktop/Duke/blank_avatar.svg">
@@ -126,9 +128,7 @@
 
 
     <footer class="footer-container">
-        <a href="">
-            Contact Us
-        </a>
+        <p>Page last updated: <span id="lastUpdate"></span></p>
     </footer>
 
     <!-- Footer
@@ -148,6 +148,13 @@
             }
         }
         window.addEventListener('scroll', toggleStickyHeader);
+
+        function getLastModifiedDate() {
+            var lastModified = new Date(document.lastModified);
+            return lastModified.toLocaleString();
+        }
+
+        document.getElementById("lastUpdate").textContent = getLastModifiedDate();
     </script>
 
 </body>

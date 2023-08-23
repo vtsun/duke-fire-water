@@ -138,9 +138,7 @@
 
         <!-- Footer -->
         <div class="footer-container">
-            <a href="">
-                Contact Us
-            </a>
+            <p>Page last updated: <span id="lastUpdate"></span></p>
         </div>
 
     </div>
@@ -181,6 +179,14 @@
             smoothScrollToSection("start-content");
         });
     }
+    
+    // LAST UPDATED TEXT:
+    function getLastModifiedDate() {
+        var lastModified = new Date(document.lastModified);
+        return lastModified.toLocaleString();
+    }
+
+    document.getElementById("lastUpdate").textContent = getLastModifiedDate();
 </script>
 
 

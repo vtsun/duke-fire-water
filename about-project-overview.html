@@ -423,9 +423,7 @@
     </div>
 
     <footer class="footer-container">
-        <a href="">
-            Contact Us
-        </a>
+        <p>Page last updated: <span id="lastUpdate"></span></p>
     </footer>
 
     <script>
@@ -480,9 +478,7 @@
                 smoothScrollToSection("literature-review");
             });
         }
-    </script>
 
-    <script>
         document.addEventListener("DOMContentLoaded", function () {
             const expandLink = document.getElementById("expand-link");
             const expandedContent = document.getElementById("literature-cited");
@@ -499,6 +495,14 @@
                 }
             });
         });
+
+        // LAST UPDATED TEXT:
+        function getLastModifiedDate() {
+            var lastModified = new Date(document.lastModified);
+            return lastModified.toLocaleString();
+        }
+
+        document.getElementById("lastUpdate").textContent = getLastModifiedDate();
     </script>
 </body>
 
