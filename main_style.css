@@ -250,11 +250,23 @@ header label {
     width: 365px;
     height: 500px;
     border-radius: 20px;
-    background-color: #f0f0f0;
+    background-color: white;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
 }
 
-.grid-page-image-container {
+/* .grid-page:hover {
+    width: 100%;
+} */
+
+.grid-page-image-container img {
     /* flex: 1; */
+    width: 365px;
+    height: 365px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+.grid-page-img {
     width: 365px;
     height: 200px;
 }
@@ -289,12 +301,12 @@ header label {
 
 .grid-page-button {
     width: 300px;
-    padding: 20px 20px;
+    padding: 24px 24px;
     background-color: rgba(40, 40, 40);
     color: white;
     text-decoration: none;
     border: none;
-    border-radius: 32px;
+    border-radius: 40px;
     cursor: pointer;
     transition: background-color 0.3s ease;
 }
